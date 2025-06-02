@@ -16,10 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="dark">
-      <head>
-        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
-      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
 }
+
+1. Ajouter une photo de profil dans le dossier `public` nommée `profile.jpg`
+
+2. Modifier le fichier layout.tsx pour avoir le bon thème sombre :

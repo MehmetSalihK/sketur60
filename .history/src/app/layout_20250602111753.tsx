@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Mehmet Salih - Développeur Fullstack',
-  description: 'Portfolio et liens de Mehmet Salih',
+  title: 'Mon Linktree Clone',
+  description: 'Partagez tous vos liens en un seul endroit',
 }
 
 export default function RootLayout({
@@ -15,10 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className="dark">
-      <head>
-        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
-      </head>
+    <html lang="fr">
       <body className={inter.className}>{children}</body>
     </html>
   )

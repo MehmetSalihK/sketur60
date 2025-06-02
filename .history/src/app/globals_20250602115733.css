@@ -33,12 +33,3 @@ body {
     transform: rotate(360deg) translate(10px) rotate(-360deg);
   }
 }
-
-@keyframes tilt {
-  0%, 100% { transform: rotate(-3deg); }
-  50% { transform: rotate(3deg); }
-}
-
-.animate-tilt {
-  animation: tilt 10s infinite ease-in-out;
-}

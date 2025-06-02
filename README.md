@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Linktree Personnel
 
-## Getting Started
+[![Licence: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Next.js](https://img.shields.io/badge/Framework-Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Version](https://img.shields.io/badge/Version-1.0.0-yellow.svg)]
 
-First, run the development server:
+## Description
+
+Linktree Personnel est une alternative personnalisée à Linktree, développée avec Next.js. Elle permet de centraliser et partager vos liens sociaux de façon élégante et responsive, avec l'affichage en temps réel du statut en direct sur Twitch et Kick.
+
+## Table des matières
+
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Lancement](#lancement)
+- [Fonctionnalités](#fonctionnalités)
+- [API](#api)
+- [Déploiement](#déploiement)
+- [Contribuer](#contribuer)
+- [Auteur](#auteur)
+- [Licence](#licence)
+
+## Prérequis
+
+- Node.js v18 ou supérieur
+- npm (ou yarn)
+- Compte développeur Twitch pour obtenir `TWITCH_CLIENT_ID` et `TWITCH_ACCESS_TOKEN`
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/MehmetSalihK/sketur60.git
+cd sketur60
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Copier le fichier d'exemple :
+   ```bash
+   cp .env.example .env.local
+   ```
+2. Ouvrir `.env.local` et définir :
+   ```env
+   TWITCH_CLIENT_ID=VotreClientIDTwitch
+   TWITCH_ACCESS_TOKEN=VotreTokenTwitch
+   # KICK n'exige pas d'authentification, mais vous pouvez ajouter d'autres variables si besoin
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Lancement
 
-## Learn More
+- En développement :
+  ```bash
+  npm run dev
+  ```
+  Accédez à [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-To learn more about Next.js, take a look at the following resources:
+- En production :
+  ```bash
+  npm run build
+  npm start
+  ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Fonctionnalités
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- UI moderne et responsive
+- Thème sombre avec animations subtiles
+- Indicateur de statut en direct pour Twitch et Kick
+- Liens vers les réseaux sociaux avec icônes personnalisées
+- Animations fluides et effets de survol
+- Optimisation des performances grâce à Next.js
 
-## Deploy on Vercel
+## API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Twitch API**  
+  - Endpoint : `https://api.twitch.tv/helix/streams`  
+  - Authentification requise : `Client ID` et `Access Token`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Kick API**  
+  - Endpoint : `https://kick.com/api/v2/channels`  
+  - Pas d'authentification requise
+
+## Déploiement
+
+Le projet peut être déployé facilement sur Vercel :
+
+1. Connectez votre dépôt GitHub à Vercel.
+2. Configurez les variables d'environnement dans le dashboard Vercel.
+3. Déployez, Vercel gère automatiquement le build et la mise en ligne.
+
+## Contribuer
+
+Les contributions sont les bienvenues !  
+1. Forkez le projet  
+2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/MaFeature`)  
+3. Commitez vos modifications (`git commit -m "Ajout de MaFeature"`)  
+4. Poussez vers la branche (`git push origin feature/MaFeature`)  
+5. Ouvrez une Pull Request
+
+## Auteur
+
+- **Mehmet Salih** – [GitHub](https://github.com/MehmetSalihK)
+
+## Licence
+
+Ce projet est sous licence [MIT](./LICENSE).

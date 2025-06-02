@@ -121,7 +121,7 @@ export default function Home() {
             </Link>
     
             {/* Kick avec status live */}
-            <Link href="https://kick.com/sketur60" 
+            <Link href="https://kick.com/jrokez" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Kick</span>
               <div className="flex items-center space-x-2">

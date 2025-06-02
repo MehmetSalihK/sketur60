@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
 
 export default function Home() {
   const [isLive, setIsLive] = useState(false);
-  const [isKickLive, setIsKickLive] = useState(false);
 
   useEffect(() => {
     const checkTwitchStatus = async () => {
@@ -28,23 +27,6 @@ export default function Home() {
 
     checkTwitchStatus();
     const interval = setInterval(checkTwitchStatus, 60000); // Check every minute
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    // Note: Cette fonction sera à mettre à jour quand Kick aura une API publique
-    const checkKickStatus = async () => {
-      try {
-        // En attente de l'API officielle de Kick
-        setIsKickLive(false);
-      } catch (error) {
-        console.error('Error checking Kick status:', error);
-        setIsKickLive(false);
-      }
-    };
-
-    checkKickStatus();
-    const interval = setInterval(checkKickStatus, 60000);
     return () => clearInterval(interval);
   }, []);
 
@@ -76,7 +58,7 @@ export default function Home() {
           <div className="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
           <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-cyan-500/30">
             <Image
-              src="/profile.jpg"
+              src="public\image.jpg"
               alt="Photo de profil"
               width={128}
               height={128}
@@ -120,21 +102,13 @@ export default function Home() {
               </div>
             </Link>
     
-            {/* Kick avec status live */}
+            {/* Kick */}
             <Link href="https://kick.com/sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Kick</span>
               <div className="flex items-center space-x-2">
                 <span className="text-xs text-gray-400 group-hover:text-cyan-400 transition-colors">@sketur60</span>
-                {isKickLive ? (
-                  <div className="flex items-center space-x-2">
-                    <span className="text-xs text-red-500 animate-pulse">EN DIRECT</span>
-                    <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div>
-                  </div>
-                ) : (
-                  <span className="text-xs text-gray-500">OFFLINE</span>
-                )}
-                <svg className="w-6 h-6 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 6.873a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM5 8.873a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7-18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                <svg className="w-6 h-6 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M19 6.873a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM5 8.873a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm7-18a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
               </div>
             </Link>
     

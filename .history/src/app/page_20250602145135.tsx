@@ -93,7 +93,7 @@ export default function Home() {
           {/* Liste des liens */}
           <div className="w-full max-w-md space-y-3">
             {/* YouTube */}
-            <Link href="https://youtube.com/@mehmet60" 
+            <Link href="https://youtube.com/@sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">YouTube</span>
               <div className="flex items-center space-x-2">

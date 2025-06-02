@@ -93,11 +93,11 @@ export default function Home() {
           {/* Liste des liens */}
           <div className="w-full max-w-md space-y-3">
             {/* YouTube */}
-            <Link href="https://youtube.com/@mehmet60" 
+            <Link href="https://youtube.com/@sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">YouTube</span>
               <div className="flex items-center space-x-2">
-                <span className="text-xs text-gray-400 group-hover:text-cyan-400 transition-colors">@mehmet60</span>
+                <span className="text-xs text-gray-400 group-hover:text-cyan-400 transition-colors">@sketur60</span>
                 <svg className="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               </div>
             </Link>
@@ -107,7 +107,7 @@ export default function Home() {
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Twitch</span>
               <div className="flex items-center space-x-2">
-                <span className="text-xs text-gray-400 group-hover:text-cyan-400 transition-colors">@msketur60</span>
+                <span className="text-xs text-gray-400 group-hover:text-cyan-400 transition-colors">@sketur60</span>
                 {isLive ? (
                   <div className="flex items-center space-x-2">
                     <span className="text-xs text-red-500 animate-pulse">EN DIRECT</span>

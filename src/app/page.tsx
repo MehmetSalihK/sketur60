@@ -93,7 +93,7 @@ export default function Home() {
           {/* Links list */}
           <div className="w-full max-w-md space-y-3">
             {/* YouTube */}
-            <Link href="https://youtube.com/@mehmet60" 
+            <Link href="https://www.youtube.com/@mehmet60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">YouTube</span>
               <div className="flex items-center space-x-2">
@@ -103,7 +103,7 @@ export default function Home() {
             </Link>
     
             {/* Twitch with live status */}
-            <Link href="https://twitch.tv/msketur60" 
+            <Link href="https://www.twitch.tv/msketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Twitch</span>
               <div className="flex items-center space-x-2">
@@ -121,7 +121,7 @@ export default function Home() {
             </Link>
 
             {/* Kick with live status */}
-            <Link href="https://kick.com/sketur60" 
+            <Link href="https://www.kick.com/sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Kick</span>
               <div className="flex items-center space-x-2">
@@ -139,7 +139,7 @@ export default function Home() {
             </Link>
     
             {/* TikTok */}
-            <Link href="https://tiktok.com/@sketur60" 
+            <Link href="https://www.tiktok.com/@sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">TikTok</span>
               <div className="flex items-center space-x-2">
@@ -149,7 +149,7 @@ export default function Home() {
             </Link>
     
             {/* X (Twitter) */}
-            <Link href="https://twitter.com/sketur60" 
+            <Link href="https://www.x.com/sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">X (Twitter)</span>
               <div className="flex items-center space-x-2">
@@ -159,7 +159,7 @@ export default function Home() {
             </Link>
 
             {/* Instagram (Videos) */}
-            <Link href="https://instagram.com/msketur60" 
+            <Link href="https://www.instagram.com/msketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Instagram (Videos)</span>
               <div className="flex items-center space-x-2">
@@ -169,7 +169,7 @@ export default function Home() {
             </Link>
     
             {/* Instagram (Personal) */}
-            <Link href="https://instagram.com/sketur60" 
+            <Link href="https://www.instagram.com/sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Instagram (Personel)</span>
               <div className="flex items-center space-x-2">
@@ -179,7 +179,7 @@ export default function Home() {
             </Link>
     
             {/* Snapchat */}
-            <Link href="https://snapchat.com/add/sketur60" 
+            <Link href="https://www.snapchat.com/add/sketur60" 
                 className="group flex items-center justify-between p-4 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 hover:bg-white/10 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="font-medium text-lg group-hover:text-cyan-400 transition-colors">Snapchat</span>
               <div className="flex items-center space-x-2">

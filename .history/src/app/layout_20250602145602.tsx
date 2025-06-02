@@ -23,3 +23,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />

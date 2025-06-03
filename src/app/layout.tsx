@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="dark">
       <head>
-        <meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
+        <meta name="format-detection" content="telephone=yes, date=no, email=no, address=no" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   const [isLive, setIsLive] = useState(false);

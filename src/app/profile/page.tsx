@@ -17,12 +17,11 @@ export default function Profile() {
         </div>
 
         {/* Nom d'utilisateur */}
-        <h1 className="text-2xl font-bold mb-2">@mehmetsalihk</h1>
-        
+        <h1 className="text-2xl font-bold mb-2">@sketur60</h1>
+
         {/* Description */}
-        <p className="text-gray-300 mb-8 text-center">
-          👨‍💻 Développeur Web/Mobile (Fullstack)
-        </p>
+
+        {/*<p className="text-lg text-gray-400 mb-8">Développeur Web</p> */}
 
         {/* Liste des liens */}
         <div className="w-full space-y-4">
